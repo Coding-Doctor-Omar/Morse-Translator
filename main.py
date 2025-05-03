@@ -111,8 +111,14 @@ while running:
             response = greet_user()
         else:
             running = False
-    else:
+    elif response == "3":
         running = False
+
+    else:
+        input("Invalid option. Press ENTER to try again.")
+        clear_screen()
+        response = greet_user()
+        continue
 
 clear_screen()
 print("Bye!")
